@@ -109,7 +109,7 @@ function agregarEnvio() {
         $stmt->execute([
             $data["numero"], $data["nombre"], $data["direccion"], 
             $data["numeracion"], $data["localidad"], 
-            $data["tipoEnvio"], $data["costo"], $data["observaciones"],$data["pago"],$data["fecha"]
+            $data["tipoEnvio"], $data["costo"], $data["observaciones"],$data["fecha"],$data["pago"]
         ]);
         respuestaExitosa("Envío agregado correctamente");
     } catch (PDOException $e) {
